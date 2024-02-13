@@ -1,0 +1,20 @@
+const hobbies = ["Sports", "Cooking"];
+console.log(hobbies[0]);
+
+hobbies.push("Hiking");
+console.log(hobbies);
+
+const index = hobbies.findIndex((item) => item === "Hiking");
+
+console.log(index);
+
+const editedHobbies = hobbies.map((item) => item + ":");
+console.log(editedHobbies);
+
+const editedHobbies2 = hobbies.map((item) => ({text: item}));
+console.log(editedHobbies2);
+
+- push는 배열에 새로운 값 추가
+- index는 있으면 해당 원소 위치 반환 없으면 -1 반환
+- map은 기존 배열을 수정하는게 아닌 새로운 배열을 생성, 반환함 
+- map을 통해 String 등의 값을 객체로도 변환 가능

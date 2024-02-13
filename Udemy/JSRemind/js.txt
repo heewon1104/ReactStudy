@@ -1,0 +1,15 @@
+JS
+- script에서 defer 속성을 추가하면 해당 스크립트가 모두 로드된 후에 나머지 코드가 실행됨
+- script에서 type="module" 속성을 주게되면 해당 script에서 import가 가능함
+
+React
+- react 프로젝트 내부의 package.json에서 react, react-dom은 react를 구성하는 주요 패키지임
+- react-script 패키지는 브라우저에 전달되기 전에 코드를 변환하는 다양한 툴 제공, 전달된 html파일에 script 태그 추가
+
+React의 코드를 변환해야 하는 이유
+1. 처리되지 않은 React 코드는 브라우저에서 실행 불가능
+- React가 JSX 기능(JS에 작성된 Html 코드) 사용하기 때문
+2. 작성한 코드가 최적화(간소화) 되지 않음
+- 사용자에게 전달할 수 있을 만큼 충분히 짧게 변형되지 않음
+-> React에서는 자동으로 코드 최적화 실시, NodeJS 설치 필요
+- NodeJS는 npm, 명령어로 패키지를 설치하거나 뒤에서 실행되는 빌드 프로세스가 사용하는 툴에도 사용됨

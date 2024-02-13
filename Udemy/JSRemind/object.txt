@@ -1,0 +1,32 @@
+const user = {
+  name: "Max",
+  age: 34,
+  greet() {
+    console.log("hello");
+    console.log(this.age);
+  },
+};
+console.log(user);
+console.log(user.name);
+user.greet();
+
+- 함수 안에 객체 접근시 this 키워드 사용
+
+
+class User {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  greet() {
+    console.log("hi!");
+  }
+}
+
+const user1 = new User("Manuel", 33);
+console.log(user1);
+user1.greet();
+
+- 블루프린트 생성
+- class 맨앞은 항상 대문자
+- 생성자를 제외하면 나머지는 함수와 같음
